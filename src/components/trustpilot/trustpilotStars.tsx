@@ -13,7 +13,7 @@ const TPStarsGroup = styled.div({
   display: 'flex'
 })
 
-export const TrustPilotStar = ({id, totalRating, size, radius}: {id: number, totalRating: number, size?: number, radius?: boolean}) => {
+const TrustPilotStar = ({id, totalRating, size, radius}: {id: number, totalRating: number, size?: number, radius?: boolean}) => {
   const backgroundColor = ['#ff3722', '#ff8622', '#ffce00', '#73cf11', '#00b67a'];
   const defaultBackgroundColor = '#dcdce6';
   const selectedBackgroundColor = Math.ceil(totalRating) >= id 
